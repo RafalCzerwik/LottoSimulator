@@ -2,7 +2,7 @@ import random
 
 
 def get_number():
-    """text"""
+    """Get number from user"""
     while True:
         try:
             number = int(input("Choose a number: "))
@@ -15,7 +15,7 @@ def get_number():
 
 
 def get_guesses():
-    """Text"""
+    """Get number from user and save in list"""
     user_numbers = []
     while len(user_numbers) < 6:
         number = get_number()
@@ -27,7 +27,7 @@ def get_guesses():
 
 
 def lotto():
-    """Text"""
+    """Main function with choose 6 random numbers"""
     print("Welcome to the LOTTO simulator!")
     user_numbers = get_guesses()
     print(f"Your number: {user_numbers}")
