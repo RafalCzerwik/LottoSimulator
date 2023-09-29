@@ -36,7 +36,7 @@ def lotto():
     print(f"Drawn numbers: {lotto}")
 
     hits = len(set(user_numbers) & set(lotto))
-    print(f"You hit {hits} numbers!")
+    print(f"You hit {hits} {'number' if hits == 1 else 'numbers'}!")
 
 
 if __name__ == "__main__":
